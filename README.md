@@ -29,6 +29,10 @@ In addition to the concepts and techniques, this repository also includes my not
 
 Feel free to explore this repository, check out the code, and use it for your own learning. If you find any errors or have suggestions, please feel free to open an issue or submit a pull request.
 
+## Compatibility with Obsidian
+
+This repository is compatible with Obsidian, a powerful knowledge base that works on top of a local folder of plain text Markdown files. You can clone this repository and open it in Obsidian to take full advantage of its features.
+
 
 ## Acknowledgements
 
