@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: #000;
+    color: #fff;
+
+
+}
+
+.container {
+    max-width: 100%;
+    min-height: 500px;
+    margin-inline: 0.5rem;
+    padding-inline: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+input {
+    color: #fff;
+    background: #1d1d1e;
+}
+
+input[value="Submit"]
+{
+    padding: 5px;
+    border-radius: 7px;
+    &:hover{
+        background: #dcf9005f;
+        cursor: pointer;
+    }
+}
+select {
+    max-width: 400px;
+    margin: auto;
+    background: #1d1d1e;
+    padding: 10px;
+    color: #fff;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: inherit;
+
+
+    &:focus {
+        outline: none;
+
+
+    }
+
+    option {
+        background: #262626;
+        font-family: inherit;
+    }
+
+}

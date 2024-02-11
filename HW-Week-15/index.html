@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn JavaScript</title>
+ <style>
+  body {
+    background: #000;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+  ul  {
+    background:#000030;
+    padding: 15px;
+    width: 300px;
+    margin: 10% auto 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+
+    & li{
+      list-style: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: .5;
+    }
+
+    .active{
+      opacity: 1;
+    }
+
+    :nth-child(1){
+      background: #f00;
+    }
+    
+    :nth-child(2){
+      background: #00f;
+    }
+    
+    :nth-child(3){
+      background: #0f0;
+    }
+    
+    :nth-child(4){
+      background: #f2ff00;
+    }
+    
+  }
+
+  .box {
+    width: 400px;
+    height: 200px;
+    margin: 5% auto;
+    background: #fff;
+  }
+ </style>
+</head>
+
+<body>
+  <ul>
+    <li class="active" data-color="#f00"></li>
+    <li data-color="#00f"></li>
+    <li data-color="#0f0"></li>
+    <li data-color="#f2ff00"></li>
+  </ul>
+  <div class="box"></div>
+  <script src="main.js"></script>
+</body>
+
+</html>

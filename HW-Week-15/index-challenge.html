@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn JavaScript</title>
+  <style>
+    body {
+      background: #000;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 2rem;
+      margin-inline: auto;
+    }
+
+    form {
+      display: flex;
+      justify-content: space-between;
+      background: #535285;
+      padding: 10px;
+
+      border-radius: 5px;
+      gap: 10px;
+      min-height: 30px;
+
+      & .task {
+        flex: 1;
+        border-radius: 5px;
+        padding: 8px;
+        background: #00000065;
+        color: #fff;
+
+        &:focus {
+          outline: none;
+          color: #ffffff;
+          background: #000000ac;
+        }
+
+        &::placeholder {
+          color: #fff;
+        }
+
+
+      }
+
+      & .add__task {
+        background: #00000065;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+
+        &:hover {
+          background: #000000d5;
+        }
+      }
+
+    }
+
+    .tasks {
+      background: #535285;
+      display: flex;
+      flex-direction: column;
+      margin-block: 30px;
+      border-radius: 5px;
+      padding: 15px;
+      gap: 10px;
+      transition: 0.3s;
+      cursor: pointer;
+
+      * {
+        background: #00000065;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        border-radius: 5px;
+
+        .spn-delete {
+          display: block;
+          background: #00000079;
+          padding: 7px 15px;
+          letter-spacing: 1px;
+          cursor: pointer;
+
+          &:hover{
+            background: #d20404a3;
+          }
+        }
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <form action="">
+      <input class="task" type="text" placeholder="Add a Task..." required>
+      <input class="add__task" type="submit" value="Add Task">
+    </form>
+    <div class="tasks">
+    </div>
+  </div>
+  <script src="main-challenge.js"></script>
+</body>
+
+</html>

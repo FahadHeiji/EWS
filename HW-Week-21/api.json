@@ -1,0 +1,11 @@
+{
+    "string": "Hi From JSON File",
+    "number": 10,
+    "object": {
+        "prop1": "value",
+        "prop2": "value"
+    },
+    "array": ["item1","item2","item3"],
+    "boolean": true,
+    "null": null
+}
